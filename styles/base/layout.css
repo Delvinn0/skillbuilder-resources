@@ -1,0 +1,179 @@
+/* =========================
+   Layout
+========================= */
+
+
+#layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+#toggle-outline{
+  display: block;
+
+  font-size: 18px;
+
+  padding: 6px 18px;
+
+  border: none;
+
+  background: var(--mantle);
+
+  border-radius: 100px;
+
+  aspect-ratio: 1/1;
+
+  border: 1px solid var(--surface);;
+
+  color: var(--text);
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+#outline {
+
+  position: sticky;
+
+  top: 80px;
+
+  width: 240px;
+
+  height: calc(100vh - 100px);
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 16px;
+
+  border-right:
+    1px solid var(--surface);
+
+  font-size: 14px;
+
+  scrollbar-width: thin;
+  
+  transition:
+    width 0.25s ease,
+    opacity 0s ease;
+}
+
+.outline-list-item::before {
+
+  content: "↳";
+
+  margin-right: 8px;
+
+  opacity: 0.7;
+
+  color: var(--overlay1);
+}
+
+body.outline-collapsed #outline {
+
+  /* color: transparent; */
+
+  width: 0;
+
+  opacity: 0;
+
+  overflow: hidden;
+
+  padding: 0;
+
+  border: none;
+}
+
+.outline-link {
+  display: block;
+
+  width: 100%;
+
+  padding: 6px 8px;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--subtext);
+
+  text-align: left;
+
+  cursor: pointer;
+
+  border-radius: 6px;
+
+  transition: 0.2s;
+}
+
+
+.outline-link:hover {
+
+  background: var(--surface);
+
+  color: var(--text);
+}
+
+#outline::-webkit-scrollbar {
+
+  width: 6px;
+}
+
+#outline::-webkit-scrollbar-thumb {
+
+  background: var(--surface);
+
+  border-radius: 999px;
+}
+
+#topbar {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+  display: flex;
+
+  gap: 12px;
+
+  padding: 12px;
+
+  background: var(--base);
+
+  border-bottom:
+    1px solid var(--surface);
+}
+
+#content {
+  flex: 1;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 24px;
+}
+
+footer {
+  padding: 0px 10px;
+}
+
+footer img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0%;
+  height: 32px;
+  width: 32px;
+}
+
+footer p {
+  color: var(--subtext);
+  display: inline-block;
+  vertical-align: middle;
+}

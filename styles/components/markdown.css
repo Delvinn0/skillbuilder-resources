@@ -1,0 +1,181 @@
+/* =========================
+   Images
+========================= */
+
+img {
+
+  display: block;
+
+  max-width: 100%;
+
+  margin: 24px auto;
+
+  border-radius: 12px;
+}
+
+/* =========================
+   Image Block
+========================= */
+
+.image-block {
+
+  display: flex;
+
+  flex-direction: column;
+  
+  gap: 10px;
+
+  margin: 32px 0;
+}
+
+.image-block img {
+
+  max-width: 100%;
+
+  border-radius: 12px;
+}
+
+.image-block figcaption {
+
+  text-align: center;
+
+  color: var(--subtext);
+}
+
+
+/* =========================
+   Gallery
+========================= */
+
+.gallery-grid {
+
+  display: grid;
+
+  align-items: center;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 16px;
+
+  margin: 32px 0;
+}
+
+.gallery-grid img {
+
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+
+/* =========================
+   Compare Slider
+========================= */
+
+.compare-container {
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  margin: 32px 0;
+}
+
+.compare-container img {
+
+  display: block;
+
+  width: 100%;
+}
+
+.compare-before {
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 50%;
+
+  overflow: hidden;
+}
+
+.compare-slider {
+
+  position: absolute;
+
+  bottom: 16px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 200px;
+}
+
+
+/* =========================
+   Showcase
+========================= */
+
+.showcase-card {
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  border:
+    1px solid var(--surface);
+
+  background: var(--mantle);
+
+  margin: 32px 0;
+}
+
+.showcase-card img {
+
+  width: 100%;
+}
+
+.showcase-content {
+
+  padding: 18px;
+}
+
+.showcase-content h3 {
+
+  margin-top: 0;
+}
+
+
+/* =========================
+   Details
+========================= */
+
+.custom-details {
+
+  margin: 24px 0;
+
+  padding: 14px;
+
+  border-radius: 12px;
+
+  border:
+    1px solid var(--surface);
+
+  background: var(--mantle);
+}
+
+.custom-details summary {
+
+  cursor: pointer;
+
+  color: var(--peach);
+}
+
+.details-content {
+
+  margin-top: 16px;
+}

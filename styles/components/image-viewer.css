@@ -1,0 +1,173 @@
+
+
+/* =========================
+   Zoomable Images
+========================= */
+
+.zoomable {
+
+  cursor: zoom-in;
+
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+.zoomable:hover {
+
+  transform: scale(1.01);
+
+  opacity: 0.95;
+}
+
+
+/* =========================
+   Image Viewer
+========================= */
+
+#image-viewer {
+
+  position: fixed;
+
+  inset: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(20,20,20,0.75),
+      rgba(0,0,0,0.95)
+    );
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: 0.2s;
+
+  z-index: 9999;
+
+  backdrop-filter: blur(10px);
+  
+  cursor: grab;
+
+  -webkit-backdrop-filter:
+    blur(10px);
+}
+
+#image-viewer.active {
+
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
+#viewer-image {
+  image-rendering: auto;
+  
+  border-radius: 14px;
+
+  object-fit: contain;
+  
+  max-width: 90vw;
+  max-height: 90vh;
+
+  user-select: none;
+
+  -webkit-user-drag: none;
+  
+  pointer-events: none;
+
+  transition: transform 0.055s linear;
+}
+
+#image-viewer.dragging {
+
+  cursor: grabbing;
+}
+
+#viewer-close {
+
+  position: absolute;
+
+  top: 24px;
+
+  right: 24px;
+
+  width: 42px;
+
+  height: 42px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  color: white;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+#viewer-close:hover {
+
+  background:
+    rgba(255,255,255,0.16);
+
+  transform: scale(1.05);
+}
+
+.zoomable {
+
+  cursor: zoom-in;
+}
+
+#viewer-prev,
+#viewer-next {
+
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 48px;
+  height: 48px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.08);
+
+  color: white;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+#viewer-prev:hover,
+#viewer-next:hover {
+
+  background: rgba(255,255,255,0.16);
+}
+
+#viewer-prev {
+  left: 24px;
+}
+
+#viewer-next {
+  right: 24px;
+}

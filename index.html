@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="darkreader-lock">
+        <meta charset="UTF-8">
+        <title>Delvin's Skillbuilder Resouces</title>
+        <link rel="icon" type="image/svg+xml" href="/assets/icons/SiteIconX.svg">
+
+        
+        <!-- <link rel="stylesheet" href="theme.css"> -->
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/@catppuccin/palette/css/catppuccin.css"
+        />
+        
+        <!-- Biblioteca Markdown -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js/dist/mark.min.js"></script>
+        </head>
+    <body>
+        <div id="tabs"></div>
+        
+        <div id="topbar">
+            <button id="toggle-outline">
+                ☰
+            </button>
+            <input
+            type="text"
+            id="search"
+            placeholder="Search...">
+            <span id="search-count"></span>
+        </div>
+
+        <div id="layout">
+            <aside id="outline"></aside>
+    
+            <main id="content">
+                Carregando...
+            <main>
+        </div>
+        
+        <div id="image-viewer">
+            <button id="viewer-close">
+                ✕
+            </button>
+            <button id="viewer-prev">←</button>
+            <img id="viewer-image"
+            draggable="false"
+            >
+            <button id="viewer-next">→</button>
+            
+        </div>
+        
+        <script type="module" src="js/main.js"></script>
+
+    </body>
+    <footer>
+        <a href="https://catppuccin.com/">
+        <img src="assets/icons/catppuccin_1544x1544_circle.png" alt="Catppuccin Site">
+        </a>
+        <p>Credits to Catppuccin for this amazing palette and theme.</p>
+    </footer>
+</html>

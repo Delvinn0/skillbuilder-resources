@@ -1,0 +1,69 @@
+@import url(
+  "https://unpkg.com/@catppuccin/palette/css/catppuccin.css"
+);
+
+:root {
+
+  --rosewater:
+    var(--ctp-mocha-rosewater);
+
+  --flamingo:
+    var(--ctp-mocha-flamingo);
+
+  --pink:
+    var(--ctp-mocha-pink);
+
+  --mauve:
+    var(--ctp-mocha-mauve);
+
+  --red:
+    var(--ctp-mocha-red);
+
+  --maroon:
+    var(--ctp-mocha-maroon);
+
+  --peach:
+    var(--ctp-mocha-peach);
+
+  --yellow:
+    var(--ctp-mocha-yellow);
+
+  --green:
+    var(--ctp-mocha-green);
+
+  --teal:
+    var(--ctp-mocha-teal);
+
+  --sky:
+    var(--ctp-mocha-sky);
+
+  --sapphire:
+    var(--ctp-mocha-sapphire);
+
+  --blue:
+    var(--ctp-mocha-blue);
+
+  --lavender:
+    var(--ctp-mocha-lavender);
+
+  --text:
+    var(--ctp-mocha-text);
+
+  --subtext:
+    var(--ctp-mocha-subtext1);
+
+  --overlay0:
+    var(--ctp-mocha-overlay0);
+
+  --surface:
+    var(--ctp-mocha-surface0);
+
+  --base:
+    var(--ctp-mocha-base);
+
+  --mantle:
+    var(--ctp-mocha-mantle);
+
+  --crust:
+    var(--ctp-mocha-crust);
+}

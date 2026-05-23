@@ -1,0 +1,27 @@
+/* =========================
+   Animations
+========================= */
+
+@keyframes copied-flash {
+
+  0% {
+
+    border-color: var(--surface);
+
+    color: var(--peach);
+  }
+
+  50% {
+
+    border-color: var(--green);
+
+    color: var(--green);
+  }
+
+  100% {
+
+    border-color: var(--surface);
+
+    color: var(--peach);
+  }
+}

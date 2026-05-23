@@ -1,0 +1,30 @@
+@font-face {
+
+  font-family: "Maple Mono-NF";
+
+  src:
+    url("../../assets/fonts/MapleMono-NF-Regular.woff2")
+    format("woff2");
+}
+
+* {
+
+  box-sizing: border-box;
+
+  font-family:
+    "Maple Mono-NF",
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  margin: 0;
+
+  background: var(--mantle);
+
+  color: var(--text);
+}

@@ -1,0 +1,253 @@
+/* =========================
+   Typography
+========================= */
+
+h1,
+h2,
+h3 {
+
+  scroll-margin-top: 100px;
+}
+
+h1 img,
+h2 img,
+h3 img{
+  vertical-align: middle;
+  border-radius: 0px;
+  margin: auto;
+  display: inline-block;
+}
+
+h1, ::marker{
+  color: var(--peach);
+  margin-top: 50px;
+  margin-bottom: -12.5px;
+}
+
+h2, ::marker {
+  margin-top: 45px;
+  margin-bottom: 0px;
+  color: var(--yellow);
+}
+
+h3, ::marker {
+  color: var(--green);
+}
+h4, ::marker {
+  padding-left: 10px;
+  color: var(--lavender);
+}
+
+hr {
+
+  border: none;
+  border-top: 4px dashed var(--surface);
+
+  height: 4px;
+
+  background: var(--mantle);
+
+  margin: 32px 0;
+}
+
+strong {
+  color: var(--red);
+  font-style: oblique;
+}
+
+blockquote {
+
+  margin-left: 0;
+
+  padding-left: 16px;
+
+  border-left:
+    3px solid var(--mauve);
+
+  color: var(--subtext);
+}
+
+p img {
+  display: block;
+  margin: 25px 0px;
+  width: 50%;
+}
+td img {
+  display: block;
+  margin: 25px 0px;
+  width: 50%;
+}
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin: 24px 0;
+
+  background: var(--mantle);
+
+  border:
+    1px solid var(--surface);
+
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+th {
+
+  padding: 12px 16px;
+
+  background: var(--base);
+
+  color: var(--peach);
+
+  text-align: left;
+
+  border-bottom:
+    1px solid var(--surface);
+  border-right:
+    1px solid var(--surface);
+    
+}
+
+td {
+
+  padding: 14px 16px;
+
+  border-bottom:
+    1px solid color-mix(
+      in srgb,
+      var(--surface),
+      transparent 35%
+    );
+  
+  border-right:
+    1px solid color-mix(
+      in srgb,
+      var(--surface),
+      transparent 35%
+    );
+
+  vertical-align: middle;
+}
+
+tr:last-child td {
+
+  border-bottom: none;
+}
+
+tr:hover td {
+
+  background:
+    color-mix(
+      in srgb,
+      var(--surface0),
+      transparent 25%
+    );
+}
+
+code {
+  display: inline-block;
+  color: var(--green);
+  text-decoration: none;
+  background-color: var(--mantle);;
+  border: 1px solid var(--surface);
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+
+a {
+
+  display: inline-block;
+
+  color: var(--blue);
+
+  text-decoration: none;
+
+  position: relative;
+
+  padding: 4px 10px;
+
+  background-color: var(--mantle);
+
+  border: 1px solid var(--base);
+
+  border-radius: 8px;
+
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+a:hover {
+
+  border-color: var(--blue);
+
+  transform: translateY(-1px);
+  transform: scale(1.1);
+}
+
+.special-link {
+
+  display: inline-block;
+
+  color: var(--yellow);
+
+  text-decoration: none;
+
+  position: relative;
+
+  padding: 4px 10px;
+
+  background-color: var(--mantle);
+
+  border: 1px solid var(--base);
+
+  border-radius: 8px;
+
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+.special-link:hover {
+
+  border-color: var(--yellow);
+
+  transform: translateY(-1px);
+  transform: scale(1.1);
+}
+
+.special-link {
+
+  display: inline-block;
+
+  color: var(--yellow);
+
+  text-decoration: none;
+
+  position: relative;
+
+  padding: 4px 10px;
+
+  background-color: var(--mantle);
+
+  border: 1px solid var(--base);
+
+  border-radius: 8px;
+
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+.special-link:hover {
+
+  border-color: var(--yellow);
+
+  transform: translateY(-1px);
+  transform: scale(1.1);
+}

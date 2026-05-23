@@ -1,0 +1,334 @@
+.right-tag, .left-tag, .both-tag, .confusion {
+  font-size: large;
+  font-style: italic;
+  gap: 10px;
+  padding: 4px 6px;
+  border-radius: 8px;
+}
+
+.right-tag {
+  color: var(--red);
+  background-color: color-mix(in srgb, var(--red), transparent 95%);
+}
+.left-tag {
+  color: var(--green);
+  background-color: color-mix(in srgb, var(--green), transparent 95%);
+}
+.both-tag {
+  color: var(--yellow);;
+  background-color: color-mix(
+    in srgb,
+    var(--yellow),
+    transparent 95%);
+}
+.confusion {
+  color: var(--mauve);;
+  background-color: color-mix(
+    in srgb,
+    var(--mauve),
+    transparent 95%);
+}
+
+/* =========================
+   Shared Components
+========================= */
+
+.copyable {
+
+  position: relative;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s,
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+.copyable:hover {
+
+  border-color: var(--peach);
+
+  transform: translateY(-1px);
+}
+
+.copyable.copied {
+
+  animation:
+    copied-flash 0.5s ease;
+}
+
+
+/* =========================
+   Copy Icon
+========================= */
+
+.copy-icon {
+
+  position: absolute;
+
+  color: var(--text);
+
+  top: 5px;
+
+  right: 8px;
+
+  opacity: .5;
+
+  font-size: 12px;
+
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+
+.copyable:hover .copy-icon {
+
+  opacity: 0.7;
+}
+
+.copyable.copied .copy-icon {
+
+  opacity: 1;
+
+  transform: scale(1.3);
+}
+
+
+/* =========================
+   Inline ID
+========================= */
+
+.id {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding:
+    4px 24px 4px 10px;
+
+  border-radius: 8px;
+
+  border:
+    1px solid var(--surface);
+
+  background: var(--mantle);
+
+  color: var(--peach);
+}
+
+
+/* =========================
+   Imaged ID
+========================= */
+
+.imaged-id,
+.data-id {
+
+  display: inline-flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  border:
+    1px solid var(--surface);
+
+  background: var(--mantle);
+}
+
+.imaged-id img,
+.data-id img {
+
+  max-width: 250px;
+
+  margin: 0;
+
+  border-radius: 8px;
+}
+
+.image-id-text {
+
+  color: var(--peach);
+
+  font-size: 15px;
+}
+
+.image-description {
+
+  margin: 0;
+
+  color: var(--subtext);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   Image Block
+========================= */
+
+.image-block {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin: 32px 0;
+}
+
+.image-block img {
+
+  max-width: 100%;
+
+  border-radius: 12px;
+}
+
+.image-block figcaption {
+
+  text-align: center;
+
+  color: var(--subtext);
+}
+
+/* =========================
+   Gallery
+========================= */
+
+.gallery-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 16px;
+
+  margin: 32px 0;
+}
+
+.gallery-grid img {
+
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+/* =========================
+   Compare Slider
+========================= */
+
+.compare-container {
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  margin: 32px 0;
+}
+
+.compare-container img {
+  
+  display: block;
+  
+  width: 100%;
+}
+
+.compare-before {
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 50%;
+
+  overflow: hidden;
+}
+
+.compare-slider {
+
+  position: absolute;
+
+  bottom: 16px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 200px;
+}
+
+/* =========================
+   Showcase
+========================= */
+
+.showcase-card {
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  border:
+    1px solid var(--surface);
+
+  background: var(--mantle);
+
+  margin: 32px 0;
+}
+
+.showcase-card img {
+
+  width: 100%;
+}
+
+.showcase-content {
+
+  padding: 18px;
+}
+
+.showcase-content h3 {
+
+  margin-top: 0;
+}
+
+
+/* =========================
+   Details
+========================= */
+
+.custom-details {
+
+  margin: 24px 0;
+
+  padding: 14px;
+
+  border-radius: 12px;
+
+  border:
+    1px solid var(--surface);
+
+  background: var(--mantle);
+}
+
+.custom-details summary {
+
+  cursor: pointer;
+
+  color: var(--peach);
+}
+
+.details-content {
+
+  margin-top: 16px;
+}

@@ -1,0 +1,92 @@
+/* =========================
+Tabs
+========================= */
+.tab-wip {
+
+  opacity: 0.5;
+
+  cursor: not-allowed !important;
+
+  border-style: dashed !important;
+}
+
+.tab-wip:hover {
+
+  transform: none !important;
+
+  border-color: var(--surface) !important;
+
+}
+
+#tabs {
+  
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 16px;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+
+  white-space: nowrap;
+
+  scrollbar-width: thin;
+
+  background: var(--base);
+}
+
+#tabs button {
+
+  flex-shrink: 0;
+
+  padding: 10px 16px 10px 14px;
+
+  border-radius: 8px;
+
+  border:
+    1px solid color-mix(
+      in srgb,
+      var(--text),
+      transparent 75%
+    );
+
+  background: var(--base);
+
+  color: var(--text);
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.2s,
+    color 0.2s;
+}
+
+#tabs button:hover {
+
+  border-color: var(--peach);
+
+  transform: translateY(-1px);
+}
+
+.active-tab {
+
+  background: var(--peach) !important;
+
+  color: var(--base) !important;
+
+  border-color: transparent !important;
+
+  transform: scale(1.03);
+}
