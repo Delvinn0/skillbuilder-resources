@@ -1,4 +1,4 @@
-import { renderCopyIcon, parseProps } from "../core/utils.js";
+import { renderCopyIcon, parseProps, renderDescription } from "../core/utils.js";
 // =========================
 // Inline IDs
 // =========================

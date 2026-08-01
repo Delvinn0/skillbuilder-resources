@@ -10,9 +10,17 @@ import {
   currentTab
 } from "./core/state.js";
 
-
-createTabs();
+import {
+  setupUpdateNotification,
+  stylizeUpdateLog
+} from "./ui/update-notification.js";
 
 loadMarkdown(
   `content/${currentTab}.md`
 );
+
+await createTabs();
+
+setupUpdateNotification();
+
+stylizeUpdateLog();

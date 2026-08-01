@@ -14,6 +14,26 @@ export function generateOutline() {
 
   headings.slice(1).forEach((heading, index) => {
 
+    const ignoredHeadings = [
+      "added",
+      "removed",
+      "fixed",
+      "improved"
+    ];
+
+    const headingText =
+      heading.textContent
+        .trim()
+        .toLowerCase();
+
+    if (
+      ignoredHeadings.includes(
+        headingText
+      )
+    ) {
+      return;
+    }
+    
     const id =
       `heading-${index}`;
 

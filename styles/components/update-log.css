@@ -1,0 +1,64 @@
+.update-notification {
+
+  position: relative;
+
+  border-color:
+    var(--peach) !important;
+
+  animation:
+    pulse-update 2s infinite;
+}
+
+.update-notification::after {
+
+  content: "";
+
+  position: absolute;
+
+  top: 6px;
+  right: 6px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 999px;
+
+  background: var(--red);
+
+  box-shadow:
+    0 0 10px var(--red);
+}
+
+
+.log-added {
+  color: var(--green);
+}
+
+.log-fixed {
+  color: var(--blue);
+}
+
+.log-improved {
+  color: var(--yellow);
+}
+
+.log-removed {
+  color: var(--red);
+}
+
+
+.log-added::before {
+  content: "+ ";
+}
+
+.log-fixed::before {
+  content: "󰖷 ";
+}
+
+.log-improved::before {
+  content: " ";
+}
+
+.log-removed::before {
+  content: "󰅚 ";
+}

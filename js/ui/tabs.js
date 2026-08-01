@@ -18,6 +18,10 @@ import {
   resetSearch
 } from "./search.js";
 
+import {
+  clearUpdateNotification,
+  stylizeUpdateLog
+} from "./update-notification.js";
 
 export async function createTabs() {
 
@@ -53,13 +57,20 @@ export async function createTabs() {
     } else {
 
       button.onclick = () => {
-
+        if (file === "update-log") {
+          clearUpdateNotification();
+        }
+        
         location.hash = file;
-
+        
         setActiveTab(button);
+        
+        loadMarkdown(path).then(() => {
+          
+          stylizeUpdateLog();
 
-        loadMarkdown(path);
-
+        });
+        
         resetSearch();
       };
     }

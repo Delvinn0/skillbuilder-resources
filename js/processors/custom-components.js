@@ -11,6 +11,10 @@ import {
   processDataIDs
 } from "./ids.js";
 
+import {
+  processTabLinks
+} from "./tab-links.js";
+
 import { renderCopyIcon } from "../core/utils.js";
 
 const componentProcessors = [
@@ -20,7 +24,9 @@ const componentProcessors = [
   processConfusionTag,
   processInlineIDs,
   processImagedIDs,
-  processDataIDs
+  processDataIDs,
+
+  processTabLinks
 ];
 
 

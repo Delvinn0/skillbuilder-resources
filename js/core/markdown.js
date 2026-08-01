@@ -20,6 +20,8 @@ import {
   setupImageViewer
 } from "../ui/image-viewer.js";
 
+import { setupTabLinks } from "../processors/tab-links.js";
+
 import { renderCopyIcon } from "../core/utils.js";
 
 
@@ -82,7 +84,9 @@ export async function loadMarkdown(path) {
     processImageComponents(html);
 
   content.innerHTML = html;
-
+  
+  setupTabLinks();
+  
   generateOutline();
 
   setupCopyables();
