@@ -1,4 +1,17 @@
-import { renderCopyIcon, parseProps, renderDescription } from "../core/utils.js";
+import { renderCopyIcon, parseProps } from "../core/utils.js";
+export function renderDescription(description) {
+
+  if (!description) {
+    return "";
+  }
+
+  return `
+    <p class="image-description">
+      ${description}
+    </p>
+  `;
+}
+
 // =========================
 // Inline IDs
 // =========================
