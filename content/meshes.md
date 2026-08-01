@@ -2,7 +2,7 @@
 
 ##  Impact + Wind
 ### By ME
-> This is inspired by Xeotrex, who made meshes like these for themself.
+> This is inspired by Xeotrex, who made meshes like these for themself..
 
 [imaged-id] id=119931661080996, 
 img=../assets/images/meshes/impact/0.png [/imaged-id]
