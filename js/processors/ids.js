@@ -1,4 +1,6 @@
 import { renderCopyIcon, parseProps } from "../core/utils.js";
+export const BASE_PATH =
+  "/skillbuilder-resources/";
 export function renderDescription(description) {
 
   if (!description) {
@@ -60,7 +62,7 @@ export function processImagedIDs(html) {
         data-copy="${props.id}"
       >
 
-        <img src="${props.img}">
+        <img src="${BASE_PATH}${props.img}">
 
         <span class="image-id-text">
           ${props.id}
