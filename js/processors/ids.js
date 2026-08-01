@@ -62,7 +62,7 @@ export function processImagedIDs(html) {
         data-copy="${props.id}"
       >
 
-        <img src="${props.img}">
+        <img src="${BASE_PATH}${props.img}">
 
         <span class="image-id-text">
           ${props.id}
